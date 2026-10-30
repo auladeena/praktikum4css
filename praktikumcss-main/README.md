@@ -3,8 +3,8 @@
 Repositori ini dibuat untuk memenuhi tugas Praktikum 4 mata kuliah Desain UI/UX / Pem Web.
 
 ## Identitas
-- **Nama:** (Isi nama kamu)
-- **NIM:** (Isi NIM kamu)
+- **Nama:** Rizkia Auladina
+- **NIM:** 0110226076
 - **Kelas:** Kamis Pagi
 
 ## Struktur File
