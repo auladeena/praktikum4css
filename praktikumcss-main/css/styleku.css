@@ -1,0 +1,242 @@
+/* 1. RESET & SETTING DASAR HALAMAN */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffd0d6; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. HEADER / BAGIAN ATAS */
+#header {
+    background-color: #f7338e; 
+    width: 100%; 
+    padding: 40px 20px; 
+    margin: 0; 
+    border-radius: 0; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+#header h1 {
+    color: #422c0ede; 
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Kotak kutipan Soekarno */
+#header blockquote {
+    background-color: #839ef8;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+    border-radius: 8px;
+    border: 1px solid #8deb13;
+    line-height: 1.5;
+}
+
+#soekarno {
+    font-weight: bold;
+    font-size: 13px;
+    color: #000;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* 3. NAVIGASI MENU */
+.nav {
+    list-style-type: none;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+    background-color: #ee85b6; 
+    border-radius: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center; 
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav a {
+    display: block; 
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 30px; 
+    transition: all 0.3s ease; 
+}
+
+/* Efek kalau mouse diarahin ke menu */
+.nav a:hover {
+    background-color: #98f54b;
+    color: #333;
+}
+
+/* 4. WADAH KONTEN UTAMA */
+.gambar, .isi, #profil, #beternak, .koleksi, .promo {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 30px auto; 
+    padding: 0 40px; 
+}
+
+/* 5. GAMBAR BURUNG BAGIAN ATAS */
+.gambar {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gambar img {
+    width: 45%; 
+    height: 350px; 
+    object-fit: cover; 
+    margin: 0 1%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    vertical-align: middle;
+}
+
+/* 6. PARAGRAF TEKS & HURUF B BESAR (DROP CAP)*/
+.isi p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333;
+}
+
+/* B STYLE */
+.isi p:first-of-type::first-letter {
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 5px;
+    padding-right: 15px;
+    color: #d30a5e;
+    font-weight: bold;
+}
+
+.jawa {
+    font-weight: bold;
+}
+
+
+/* 7. KOTAK PROFIL & CARA BETERNAK */
+#profil, #beternak {
+    background-color: #fff;
+    padding: 30px 40px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#profil h3, #beternak h3 {
+    color: #2c3e50;
+    border-bottom: 3px solid #f7335d; 
+    padding-bottom: 10px;
+}
+
+#profil ul, #beternak ol {
+    line-height: 1.8;
+    color: #444;
+}
+
+#beternak h4 {
+    margin-bottom: 5px;
+    color: #ec5a9e;
+}
+
+/* 8. GALERI FOTO BAWAH */
+
+.koleksi {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.koleksi img {
+    width: 23%;
+    height: 180px; 
+    object-fit: cover;
+    margin: 0 0.5%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    vertical-align: middle; 
+}
+
+/* 9. BAGIAN PROMO & HARGA */
+
+.promo {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px dashed #f7b733;
+    margin-bottom: 50px;
+}
+
+.promo h2 {
+    color: #fd4a4a;
+    font-size: 22px;
+}
+
+.promo h3 {
+    color: #333;
+    font-size: 16px;
+}
+
+.promo del {
+    color: red;
+}
+
+.promo strong {
+    background-color: yellow;
+    font-size: 22px;
+    padding: 2px 5px;
+}
+
+#Wa {
+    color: #25D366; 
+    font-weight: bold;
+}
+
+/* List link e-commerce */
+.promo ol {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.promo ol li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.promo ol a {
+    background-color: #f86bb1;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.promo ol a:hover {
+    background-color: #6af733;
+    color: #333;
+}
